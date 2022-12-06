@@ -2,7 +2,7 @@
 
 *,
 *:after,
-*:before{
+*:before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +11,7 @@
 
 :active,
 :hover,
-:focus{
+:focus {
     outline: 0 !important;
     outline-offset: 0;
 }
@@ -22,10 +22,11 @@ a:hover{
 }
 
 a:hover{
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
-ul,ol{
+ul,
+ol{
     margin: 0;
     padding: 0;
 }
@@ -73,19 +74,19 @@ body{
 =======================================
 */
 
-h1{
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
+h1 {
+    font-size: 6.25rem;
+    font-weight:900;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
 h1 span{
     color: var(--white-color);
 }
 
-h2{
-    font-weight: 600;
+h2 {
+    font-weight: 700;
     position: relative;
     font-size: 2.18rem;
     text-transform: capitalize;
@@ -93,7 +94,7 @@ h2{
     line-height: 3.7rem;
 }
 
-h2:before{
+h2:before {
     background: #ef6d9f;
     border-radius: 0.3125rem;
     content: '';
@@ -104,7 +105,7 @@ h2:before{
     height: 0.3125rem;
 }
 
-h4{
+h4 {
     color: var(--black-color);
     text-transform: capitalize;
     font-size: 1.25rem;
@@ -113,7 +114,7 @@ h4{
     transition: all .3s linear;
 }
 
-h5{
+h5 {
     color: var(--black-color);
     text-transform: capitalize;
     font-family: var(--primary-color);
@@ -122,7 +123,7 @@ h5{
     margin-bottom: 0.5rem;
 }
 
-p{
+p {
     font-size: 1.125rem;
     color: var(--text-color);
     font-weight: 400;
@@ -156,7 +157,7 @@ p{
 
 .main-btn::before{
     height: 3.125rem;
-    width: 9.125rem;
+    width: 8.125rem;
 }
 
 .main-btn::after{
@@ -164,11 +165,14 @@ p{
     height: 1.875rem;
 }
 
-.noselect{
+/* .noselect{
     -webkit-touch-callout: none;
-       -webkit-user-selcet:none;
+       -webkit-user-select:none;
+        -khtml-user-select:none;
+          -moz-user-selcet:none;
+           -ms-user-select:none;
               -user-select:none;
-}
+} */
 
 .main-btn:hover::before{
     width: 0px;
@@ -176,7 +180,7 @@ p{
 }
 
 .main-btn:hover::after{
-    height: 0;
+    height: 0px;
     background:var(--white-color);
 }
 
@@ -240,6 +244,10 @@ p{
     margin: auto;
 }
 
+.navigation-wrap .main-btn:hover{
+    background-color: transparent;
+}
+
 .navigation-wrap .main-btn::before,
 .navigation-wrap .main-btn::after{
     background-color: transparent;
@@ -257,8 +265,8 @@ p{
     transition: all .15s ease-in-out;
 }
 
-.navigation-wrap.navigation-wrap.scroll-on .nav-link:hover,
-.navigation-wrap.navigation-wrap.scroll-on .nav-link.active{
+.navigation-wrap.scroll-on .nav-link:hover,
+.navigation-wrap.scroll-on .nav-link.active{
     color:var(--primary-color)
 }
 
@@ -277,15 +285,31 @@ p{
 }
 
 
-
-
-
-
 /*
 =======================================
         Top-Banner Design
 =======================================
 */
+
+ .hero_slider .carousel-caption{
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-75%,-35%);
+    max-width: 1320px;
+}
+
+.hero_slider .carousel-caption h2{
+    color: var(--white-color);
+}
+
+.hero_slider .carousel-caption p{
+    color: var(--white-color);
+}  
+
+
 
 
 
