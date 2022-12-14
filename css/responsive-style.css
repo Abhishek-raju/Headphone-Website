@@ -117,6 +117,17 @@ h2:before{
 
     /* About */
 
+    .about-slider,
+    .feature-img-box,
+    .style-img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .about-slider .carousel-inner{
+        border-radius: 0 0 1.875rem;
+    }
+
 
     /* Headphones */
 
