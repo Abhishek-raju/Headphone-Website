@@ -68,6 +68,9 @@ h2{
     }
 
     /* Feature */
+    .features .card .icon{
+        margin-bottom: 20px;
+    }
 
     /* Headphone */
     
@@ -131,7 +134,7 @@ h2:before{
 
     /* Headphones */
 
-    /* COntact Us */
+    /* Contact Us */
 }
 
 @media (max-width:430px){
