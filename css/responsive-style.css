@@ -73,6 +73,11 @@ h2{
     }
 
     /* Headphone */
+    #zoom-img-0,
+    #zoom-img-1,
+    #zoom-img-2{
+        height: 220px;
+    }
     
 }
 
@@ -133,6 +138,14 @@ h2:before{
 
 
     /* Headphones */
+    #zoom-img-0,
+    #zoom-img-1,
+    #zoom-img-2{
+        height: 13.75rem;
+        width: 50%;
+        text-align: center;
+        margin:auto;
+    }
 
     /* Contact Us */
 }
