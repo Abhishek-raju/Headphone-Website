@@ -148,6 +148,35 @@ h2:before{
     }
 
     /* Contact Us */
+
+    form input[type=email],
+    form input[type=text],
+    .subscribe{
+        padding-inline-start: 0 0.625rem;
+        font-size: 0.875rem;
+        text-align: center;;
+    }
+
+    .subscribe{
+        font-size: 0.875;
+    }
+
+    form .form-group,
+    form input[type=text]{
+        margin: 0 0 1rem;
+        width: 100%;
+    }
+    form .form-group{
+        white-space: nowrap;
+    }
+
+    form input[type=email]{
+        width: 50%;
+    }
+
+    form input[type=text]{
+        margin-bottom: 1rem !important;
+    }
 }
 
 @media (max-width:430px){
